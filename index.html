@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,69 @@
     <link rel="stylesheet" href="./style.css">
     <title>Portfolilo</title>
 </head>
+
 <body>
-    <nav>
-        <div class="logo">
-            <img src="logo.svg" alt="Logo Image">
+    <div id="header">
+        <div class="nav-menu">
+            <nav>
+                <img src="personal-portfolio-img/images/logo.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Java Backend Developer -</p>
+                <h1>Hi,I'm <span> Aman </span><br> Maurya From India</h1>
+            </div>
         </div>
-        <div class="hamburger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="personal-portfolio-img/images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores molestias perspiciatis
+                        deleniti alias nisi voluptatum libero, consequuntur nostrum, iure maiores recusandae! Odit quos
+                        dolores recusandae voluptates id enim ipsam possimus, earum perspiciatis voluptatibus a.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse culpa deleniti animi possimus
+                        alias cumque quos ut. Iste voluptates tempore eos blanditiis, esse laboriosam non. Iure
+                        quibusdam facere in laboriosam?</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills-details')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education-details')">Education</p>
+                        </div>
+                        <div class="tab-contains active-tab" id="skills-details">
+                            <ul>
+                                <li><span>Language</span> <br> Java | JavaScript</li>
+                                <li><span>Tools</span> <br> VSCode | STS | Git | Postman</li>
+                                <li><span>Frameworks</span> <br> Spring | SpringBoot</li>
+                                <li><span>Databases</span> <br> MySQL</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contains" id="education-details">
+                            <ul>
+                                <li><span>Oct-2022 | Present</span> <br>Masai School (Full Stack Development)</li>
+                                <li><span>Aug-2019 | July-2022</span> <br>Diploma in Electronics from Govt. Polytechinc Lucknow </li>
+                                <li><span>April-2017 | May-2019</span> <br>12th from EC Railway Inter Collage</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
         </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><button class="login-button" href="#">Login</button></li>
-            <li><button class="join-button" href="#">Join</button></li>
-        </ul>
-    </nav>
+    </div>
 </body>
-<script></script>
+<script src="./index.js"></script>
+
 </html>

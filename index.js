@@ -1,14 +1,15 @@
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontains = document.getElementsByClassName("tab-contains");
 
-hamburger.addEventListener('click', ()=>{
-   //Animate Links
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
-        link.classList.toggle("fade");
-    });
 
-    //Hamburger Animation
-    hamburger.classList.toggle("toggle");
-});
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+    }
+    for(tabcontain of tabcontains){
+        tabcontain.classList.remove("active-tab")
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+}
