@@ -24,32 +24,34 @@
 </head>
 
 <body>
-    <div id="header">
-        <div class="menu container nav-link header">
-            <nav id="menu">
+    <div class="nav-link home" id="home">
+        <div class="menu container nav-link home">
+            <nav id="nav-menu">
                 <img src="personal-portfolio-img/images/logo.png" alt="logo" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a> </li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#home">Home</a> </li>
+                    <li><a class="nav-link about" href="#about">About</a></li>
+                    <li><a class="nav-link skills" href="#skills">Skills</a></li>
+                    <li><a class="nav-link projects" href="#projects">Project</a></li>
                     <li><a href="#githubs">Github</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a class="nav-link resume" href="./personal-portfolio-img/images/Aman-Maurya-Resume.pdf"
-                            download="Aman-Maurya-Resume" 
+                    <li><a class="nav-link contact" href="#contact">Contact</a></li>
+                    <li id="resume-button-1"><a id="resume-link-1" class="nav-link resume"
+                            href="./personal-portfolio-img/images/Aman-Maurya-Resume.pdf" download="Aman-Maurya-Resume"
                             onclick="window.open('https://drive.google.com/file/d/1fGg2pHbluJb_zeOLnX6RtKUdSQqdzJOt/view?usp=share_link')">Resume
                         </a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div id="home" class="header-text">
+            <div class="home-text">
                 <p id="user-detail-skill">Java Backend Developer -</p>
                 <h1 id="user-detail-name">Hi,I'm <span> Aman </span><br> Maurya From India</h1>
-                <a href="./personal-portfolio-img/images/Aman-Maurya-Resume.pdf"
-                            download="Aman-Maurya-Resume" class="btn btn2"
-                            onclick="window.open('https://drive.google.com/file/d/1fGg2pHbluJb_zeOLnX6RtKUdSQqdzJOt/view?usp=share_link')">Resume
-                        </a>
+                <div id="resume-button-2">
+                    <a id="resume-link-2" href="./personal-portfolio-img/images/Aman-Maurya-Resume.pdf"
+                        download="Aman-Maurya-Resume" class="btn btn2"
+                        onclick="window.open('https://drive.google.com/file/d/1fGg2pHbluJb_zeOLnX6RtKUdSQqdzJOt/view?usp=share_link')">Resume
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -60,11 +62,12 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="personal-portfolio-img/images/user-1.jpg" alt="">
+                    <img class="home-img" src="personal-portfolio-img/images/user-1.jpg" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores molestias perspiciatis
+                    <p d="user-detail-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse asperiores
+                        molestias perspiciatis
                         deleniti alias nisi voluptatum libero, consequuntur nostrum, iure maiores recusandae! Odit quos
                         dolores recusandae voluptates id enim ipsam possimus, earum perspiciatis voluptatibus a.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse culpa deleniti animi possimus
@@ -226,72 +229,102 @@
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-                <div class="work show-project">
+                <div class="work show-project project-card">
                     <img src="personal-portfolio-img/images/work-1.png" alt="">
                     <div class="layer">
-                        <h3>GearBest Website</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eum minima autem, non
+                        <h3 class="project-title">GearBest Website</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                            eum minima autem, non
                             molestias consequatur ratione blanditiis. Ab, quis praesentium.</p>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p class="project-tech-stack">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                        </p>
+                        <a class="project-github-link" href="#"><i class="fa-brands fa-github"></i></a>
+                        <a class="project-deployed-link" href="#"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
                     </div>
                 </div>
-                <div class="work show-project">
-                    <img src="personal-portfolio-img/images/work-2.png" alt="">
+                
+                <div class="work show-project project-card">
+                    <img src="personal-portfolio-img/images/work-1.png" alt="">
                     <div class="layer">
-                        <h3>Columbia Website</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eum minima autem, non
+                        <h3 class="project-title">GearBest Website</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                            eum minima autem, non
                             molestias consequatur ratione blanditiis. Ab, quis praesentium.</p>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p class="project-tech-stack">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                        </p>
+                        <a class="project-github-link" href="#"><i class="fa-brands fa-github"></i></a>
+                        <a class="project-deployed-link" href="#"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
                     </div>
                 </div>
-                <div class="work show-project">
-                    <img src="personal-portfolio-img/images/work-3.png" alt="">
+                
+                <div class="work show-project project-card">
+                    <img src="personal-portfolio-img/images/work-1.png" alt="">
                     <div class="layer">
-                        <h3>Crime Management</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eum minima autem, non
+                        <h3 class="project-title">GearBest Website</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                            eum minima autem, non
                             molestias consequatur ratione blanditiis. Ab, quis praesentium.</p>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p class="project-tech-stack">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                        </p>
+                        <a class="project-github-link" href="#"><i class="fa-brands fa-github"></i></a>
+                        <a class="project-deployed-link" href="#"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
                     </div>
                 </div>
-                <div class="work">
-                    <img src="personal-portfolio-img/images/work-3.png" alt="">
+                
+                <div class="work show-project project-card">
+                    <img src="personal-portfolio-img/images/work-1.png" alt="">
                     <div class="layer">
-                        <h3>Crime Management</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eum minima autem, non
+                        <h3 class="project-title">GearBest Website</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                            eum minima autem, non
                             molestias consequatur ratione blanditiis. Ab, quis praesentium.</p>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p class="project-tech-stack">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                        </p>
+                        <a class="project-github-link" href="#"><i class="fa-brands fa-github"></i></a>
+                        <a class="project-deployed-link" href="#"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
                     </div>
                 </div>
-                <div class="work">
-                    <img src="personal-portfolio-img/images/work-3.png" alt="">
+                
+                <div class="work show-project project-card">
+                    <img src="personal-portfolio-img/images/work-1.png" alt="">
                     <div class="layer">
-                        <h3>Crime Management</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eum minima autem, non
+                        <h3 class="project-title">GearBest Website</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                            eum minima autem, non
                             molestias consequatur ratione blanditiis. Ab, quis praesentium.</p>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p class="project-tech-stack">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                        </p>
+                        <a class="project-github-link" href="#"><i class="fa-brands fa-github"></i></a>
+                        <a class="project-deployed-link" href="#"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
                     </div>
                 </div>
-                <div class="work">
-                    <img src="personal-portfolio-img/images/work-3.png" alt="">
+                
+                <div class="work show-project project-card">
+                    <img src="personal-portfolio-img/images/work-1.png" alt="">
                     <div class="layer">
-                        <h3>Crime Management</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eum minima autem, non
+                        <h3 class="project-title">GearBest Website</h3>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                            eum minima autem, non
                             molestias consequatur ratione blanditiis. Ab, quis praesentium.</p>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p class="project-tech-stack">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                        </p>
+                        <a class="project-github-link" href="#"><i class="fa-brands fa-github"></i></a>
+                        <a class="project-deployed-link" href="#"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
 
                     </div>
                 </div>
+                
             </div>
             <a class="btn" id="show-more-button">See more</a>
         </div>
@@ -304,14 +337,14 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>amanmaurya8419@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>+916306804122</p>
+                    <p  id="contact-email"><i class="fa-solid fa-paper-plane"></i>amanmaurya8419@gmail.com</p>
+                    <p id="contact-phone"><i class="fa-solid fa-square-phone"></i>+916306804122</p>
                     <div class="social-icons">
-                        <a href="https://github.com/Amanmauryacode"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://twitter.com/Amanmaurya_1"><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href="https://www.linkedin.com/in/aman-maurya-10b230203/"><i
+                        <a target="_blank" href="https://github.com/Amanmauryacode" id="contact-github"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://twitter.com/Amanmaurya_1" ><i class="fa-brands fa-twitter-square"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/aman-maurya-10b230203/" id="contact-linkedin"><i
                                 class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://leetcode.com/amanmaurya8419/"><i class="fa-solid fa-code"></i></a>
+                        <a target="_blank" href="https://leetcode.com/amanmaurya8419/"><i class="fa-solid fa-code"></i></a>
                     </div>
                     <a href="./personal-portfolio-img/images/Aman-Maurya-Resume.pdf" download="Aman-Maurya-Resume"
                         class="btn btn2"
