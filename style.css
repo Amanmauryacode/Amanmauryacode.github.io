@@ -280,7 +280,7 @@ nav ul li a:hover::after {
     transition: color 0.2s;
 }
 .project_details h2 {
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 .work:hover .project_details {
